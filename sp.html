@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Produkter</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <link rel="stylesheet" href="sp.css" />
   </head>
   <body>
@@ -23,13 +27,11 @@
         <p>Pris: xxx kr</p>
         <button onclick="addToCart('Produkt 2')">Lägg till i kundvagnen</button>
       </div>
-      <!-- Lägg till fler produkter här -->
     </div>
     <footer>
-      <p>2024 Vår Webbutik. Alla rättigheter förbehållna.</p>
+      <p>&copy; 2024 Vår Webbutik. Alla rättigheter förbehållna.</p>
     </footer>
 
-    <!-- Modal -->
     <div id="cartModal" class="modal">
       <div class="modal-content">
         <span class="close" onclick="closeModal()">&times;</span>
@@ -37,6 +39,12 @@
         <ul id="cartItems"></ul>
       </div>
     </div>
+
+    <div class="cart-icon" onclick="openModal()">
+      <i class="fas fa-shopping-cart"></i>
+    </div>
+    <script>
+      href = "sp.js";
+    </script>
   </body>
-  <script src="sp.js"></script>
 </html>
