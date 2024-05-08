@@ -2,43 +2,50 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  height: 100vh; /* Set body height to viewport height */
+  overflow-y: auto; /* Allow vertical scrolling */
 }
+
 header {
+  display: flex;
+  justify-content: center;
   background-color: #6cb5b8;
   color: #fff;
   padding: 10px 0;
-  text-align: center;
+  width: 100%;
 }
-.container {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 0 20px;
+
+.product_container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
 }
+.product_container_2nd {
+  display: flex;
+}
+
 .product {
   border: 3px solid #377771;
+  width: 100%;
   border-radius: 5px;
   padding: 20px;
-  width: calc(33.33% - 20px);
+  margin: 15px; /* Add margin for space between products */
 }
-.product h2 {
-  margin-top: 0;
-}
-.product p {
-  margin-bottom: 10px;
-}
+
 footer {
   background-color: #6cb5b8;
   color: #fff;
   padding: 10px 0;
   text-align: center;
-  position: fixed;
-  bottom: 0;
+  position: relative; /* Change position to relative */
   width: 100%;
+  margin-top: auto; /* Set margin-top to auto to push it to the bottom */
 }
+
+/* Ensure main content is pushed down to avoid being hidden under fixed header */
+main {
+  padding-top: 60px; /* Adjust to match header height */
+  padding-bottom: 60px; /* Adjust to match footer height */
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -51,27 +58,30 @@ footer {
   background-color: rgba(0, 0, 0, 0.4);
   padding-top: 60px;
 }
+
 .modal-content {
-  background-color: #ffffffff;
+  background-color: #ffffff;
   margin: 5% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
 }
+
 .close {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
-.close:hover,
+
 .close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
 }
+
 .cart-icon {
-  position: fixed;
+  position: fixed; /* Fixed position */
   right: 20px;
   bottom: 10px;
   width: 50px;
@@ -84,6 +94,8 @@ footer {
   align-items: center;
   cursor: pointer;
 }
-.cart-icon i {
-  font-size: 24px;
+
+.produktBild {
+  display: flexbox;
+  width: 40%;
 }

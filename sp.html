@@ -12,14 +12,15 @@
   </head>
   <body>
     <header>
-      <h1>Välkommen till vår webbutik</h1>
+      <h1>Välkommen till Skokungen</h1>
     </header>
-    <div class="container">
+    <div class="product_container">
       <div class="product">
-        <h2>Produkt 1</h2>
-        <p>Beskrivning av produkt 1.</p>
-        <p>Pris: xxx kr</p>
+        <h2>Yeezy Foam Runner "black"</h2>
+        <p>The Yeezy Foam Runner is a low-profile shoe with a futuristic approach to comfort wear.</p>
+        <p>Pris:2999 kr</p>
         <button onclick="addToCart('Produkt 1')">Lägg till i kundvagnen</button>
+        <img src="images/yeezyfoam.webp" class="produktBild" alt="yeezyfoam">
       </div>
       <div class="product">
         <h2>Produkt 2</h2>
@@ -27,6 +28,21 @@
         <p>Pris: xxx kr</p>
         <button onclick="addToCart('Produkt 2')">Lägg till i kundvagnen</button>
       </div>
+    </div>
+    <div class="product_container_2nd">
+      <div class="product">
+        <h2>Produkt 3</h2>
+        <p>Beskrivning av produkt 3.</p>
+        <p>Pris: xxx kr</p>
+        <button onclick="addToCart('Produkt 3')">Lägg till i kundvagnen</button>
+      </div>
+      <div class="product">
+        <h2>Produkt 4</h2>
+        <p>Beskrivning av produkt 4.</p>
+        <p>Pris: xxx kr</p>
+        <button onclick="addToCart('Produkt 4')">Lägg till i kundvagnen</button>
+      </div>
+    </div>
     </div>
     <footer>
       <p>&copy; 2024 Vår Webbutik. Alla rättigheter förbehållna.</p>
@@ -43,8 +59,6 @@
     <div class="cart-icon" onclick="openModal()">
       <i class="fas fa-shopping-cart"></i>
     </div>
-    <script>
-      href = "sp.js";
-    </script>
+    <script src="sp.js"></script>
   </body>
 </html>
