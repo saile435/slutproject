@@ -2,8 +2,8 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  height: 100vh; /* Set body height to viewport height */
-  overflow-y: auto; /* Allow vertical scrolling */
+  height: 100vh;
+  overflow-y: auto;
 }
 
 header {
@@ -27,7 +27,7 @@ header {
   width: 100%;
   border-radius: 5px;
   padding: 20px;
-  margin: 15px; /* Add margin for space between products */
+  margin: 15px;
 }
 
 footer {
@@ -35,15 +35,14 @@ footer {
   color: #fff;
   padding: 10px 0;
   text-align: center;
-  position: relative; /* Change position to relative */
+  position: relative;
   width: 100%;
-  margin-top: auto; /* Set margin-top to auto to push it to the bottom */
+  margin-top: auto;
 }
 
-/* Ensure main content is pushed down to avoid being hidden under fixed header */
 main {
-  padding-top: 60px; /* Adjust to match header height */
-  padding-bottom: 60px; /* Adjust to match footer height */
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .modal {
@@ -81,7 +80,7 @@ main {
 }
 
 .cart-icon {
-  position: fixed; /* Fixed position */
+  position: fixed;
   right: 20px;
   bottom: 10px;
   width: 50px;
@@ -98,4 +97,15 @@ main {
 .produktBild {
   display: flexbox;
   width: 40%;
+}
+
+button {
+  background-color: white;
+  color: black;
+  border: 2px solid #377771;
+  border-radius: 7%;
+}
+
+button:active {
+  opacity: 50%;
 }
