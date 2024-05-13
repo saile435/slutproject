@@ -1,57 +1,90 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Produkter</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-    <link rel="stylesheet" href="sp.css" />
+    <link rel="stylesheet" href="css/sp.css" />
   </head>
   <body>
     <header>
-      <h1>Välkommen till Skokungen</h1>
+      <h1>Welcome to weSellShoes.com</h1>
+      <nav>
+        <ul>
+          <li><a href="sp2.html">About Us</a></li>
+        </ul>
+      </nav>
     </header>
+
     <div class="product_container">
       <div class="product">
         <h2>Yeezy Foam Runner "Black"</h2>
-        <p>The Yeezy Foam Runner is a low-profile shoe with a futuristic approach to comfort wear. 
-          At the base, a cushioned footbed offers comfort and support, while a sculptural sole with deep treads provides traction.</p>
+        <p>
+          The Yeezy Foam Runner is a low-profile shoe with a futuristic approach
+          to comfort wear. At the base, a cushioned footbed offers comfort and
+          support, while a sculptural sole with deep treads provides traction.
+        </p>
         <p>$116</p>
-        <button onclick="addToCart('Yeezy Foam Runner (Black) $116')">Add to cart</button>
-        <img src="images/yeezyfoam.webp" class="produktBild" alt="yeezyfoam">
+        <button onclick="addToCart('Yeezy Foam Runner (Black) $116')">
+          Add to cart
+        </button>
+        <img src="images/yeezyfoam.webp" class="produktBild" alt="yeezyfoam" />
       </div>
       <div class="product">
         <h2>Yeezy Boost 350 "Granite"</h2>
-        <p>The adidas Yeezy Boost 350 V2 Granite boasts the iconic Yeezy silhouette, known for its low-top design and sleek, sock-like fit.
-            The sneaker primarily takes on neutral tones in granite and Core Black for a neutral and versatile look.</p>
-        <p> $231</p>
-        <button onclick="addToCart('Yeezy Boost 350 (Granite)$231')">Add to cart</button>
-        <img src="images/yeezyboost.jpg" class ="produktBild"alt="yeezyboost">
+        <p>
+          The adidas Yeezy Boost 350 V2 Granite boasts the iconic Yeezy
+          silhouette, known for its low-top design and sleek, sock-like fit. The
+          sneaker primarily takes on neutral tones in granite and Core Black for
+          a neutral and versatile look.
+        </p>
+        <p>$231</p>
+        <button onclick="addToCart('Yeezy Boost 350 (Granite)$231')">
+          Add to cart
+        </button>
+        <img src="images/yeezyboost.jpg" class="produktBild" alt="yeezyboost" />
       </div>
     </div>
     <div class="product_container_2nd">
       <div class="product">
-        <h2>Yeezy Slides</h2>
-        <p>The Slide Slate Grey adidas Yeezy comes in a slate grey color palette. The shoe features an upper constructed from a single piece of molded EVA foam,
-           offering a lightweight and durable design.The slide's design features strategic cutouts and a breathable lining.
-            The slide's outsole features a textured pattern that provides traction and stability. The Yeezy Slide features an effortless slip-on design for easy wear and removal.</p>
+        <h2>Yeezy Slides "Grey"</h2>
+        <p>
+          The Slide Slate Grey adidas Yeezy comes in a slate grey color palette.
+          The shoe features an upper constructed from a single piece of molded
+          EVA foam, offering a lightweight and durable design.The slide's design
+          features strategic cutouts and a breathable lining. The slide's
+          outsole features a textured pattern that provides traction and
+          stability. The Yeezy Slide features an effortless slip-on design for
+          easy wear and removal.
+        </p>
         <p>Pris: 80$</p>
-        <button onclick="addToCart('Produkt 3')">Add to cart</button>
-        <img src="images/yeezyslide.jpg"class ="produktBild" alt="yeezyslide">
+        <button onclick="addToCart('Yeezy Slides(Grey) 80$')">
+          Add to cart
+        </button>
+        <img src="images/yeezyslide.jpg" class="produktBild" alt="yeezyslide" />
       </div>
       <div class="product">
         <h2>Yeezy 700 V3 "Azael"</h2>
-        <p>The third incarnation of the Yeezy 700 is one of the most sophisticated designs we've seen from the ongoing collaborations,
-           playing with shape, line, texture, and even expectations.
-           The outer shell is reminiscent of a race car and an astronaut's suit with a sole unit that feels progressive and substantial.</p>
+        <p>
+          The third incarnation of the Yeezy 700 is one of the most
+          sophisticated designs we've seen from the ongoing collaborations,
+          playing with shape, line, texture, and even expectations. The outer
+          shell is reminiscent of a race car and an astronaut's suit with a sole
+          unit that feels progressive and substantial.
+        </p>
         <p>309$</p>
-        <button onclick="addToCart('Produkt 4')">Add to cart</button>
-        <img src="images/yeezyazael2.jpg" class= "produktBild" alt="yeezyazael">
+        <button onclick="addToCart('Yeezy 700 V3 (Azael) 309$')">
+          Add to cart
+        </button>
+        <img
+          src="images/yeezyazael2.jpg"
+          class="produktBild"
+          alt="yeezyazael"
+        />
       </div>
-    </div>
     </div>
     <footer>
       <p>&copy; 2024 Vår Webbutik. Alla rättigheter förbehållna.</p>
@@ -68,6 +101,6 @@
     <div class="cart-icon" onclick="openModal()">
       <i class="fas fa-shopping-cart"></i>
     </div>
-    <script src="sp.js"></script>
+    <script src="javascript/sp.js"></script>
   </body>
 </html>
